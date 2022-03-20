@@ -3,7 +3,9 @@ const path = require("path");
 const basePath = process.cwd();
 const fs = require("fs");
 
-const { fetchWithRetry } = require(`${basePath}/utils/functions/fetchWithRetry.js`);
+const {
+  fetchWithRetry,
+} = require(`${basePath}/utils/functions/fetchWithRetry.js`);
 
 const { GENERIC } = require(`${basePath}/src/config.js`);
 
@@ -62,15 +64,15 @@ async function main() {
     const uploadedMeta = `${writeDir}/_ipfsMetasResponse.json`;
 
     const genericObject = {
-      "name": metaData.name,
-      "description": metaData.description,
-      "file_url": metaData.image,
-      "external_url": metaData?.external_url,
-      "custom_fields": {
-        "date": metaData.date,
-        "compiler": "HashLips Art Engine - codeSTACKr Modified"
-      }
-    }
+      name: metaData.name,
+      description: metaData.description,
+      file_url: metaData.image,
+      external_url: metaData?.external_url,
+      custom_fields: {
+        date: metaData.date,
+        compiler: "Art Engine",
+      },
+    };
 
     try {
       const url = "https://api.nftport.xyz/v0/metadata";

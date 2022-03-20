@@ -324,12 +324,14 @@ section {
 }
 
 .splide__slide {
-  border: var(--accent-color) solid;
+  border: var(--accent-color);
   border-width: 5px 5px;
+  height: auto;
 }
 
 .splide__slide img {
   width: 100%;
+  height: auto;
 }
 
 /* SPINNER */
@@ -337,7 +339,8 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(3);
+  /* transform: translate(-50%, -50%) scale(3); */
+  height: auto;
 }
 
 /* MEDIA QUERIES */

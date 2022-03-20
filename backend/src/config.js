@@ -121,7 +121,7 @@ const text = {
 };
 
 const pixelFormat = {
-  ratio: 21 / 128,
+  ratio: 2 / 128,
 };
 
 const background = {
@@ -136,7 +136,7 @@ const rarityDelimiter = "#";
 const uniqueDnaTorrance = 10000;
 
 const preview = {
-  thumbPerRow: 5,
+  thumbPerRow: 50,
   thumbWidth: 50,
   imageRatio: format.height / format.width,
   imageName: "preview.png",

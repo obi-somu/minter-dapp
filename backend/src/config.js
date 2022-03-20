@@ -1,4 +1,4 @@
-require('dotenv').config();
+require("dotenv").config();
 const basePath = process.cwd();
 const fs = require("fs");
 const { MODE } = require(`${basePath}/constants/blend_mode.js`);
@@ -7,23 +7,16 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "YOUR COLLECTION NAME";
-const description = "Remember to replace this description";
+const namePrefix = "Mutant Hog Coven";
+const description =
+  "This is a collection of 100 unique NFTs residing in the Polygon Chain.";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
-    ],
+    growEditionSizeTo: 100,
+    layersOrder: [{ name: "Background" }, { name: "Body" }],
   },
 ];
 
@@ -34,11 +27,11 @@ const debugLogs = false;
 const format = {
   width: 512,
   height: 512,
-  smoothing: false,
+  smoothing: true,
 };
 
 const extraMetadata = {
-  external_url: "https://codecats.xyz", // Replace with your website or remove this line if you do not have one.
+  external_url: "", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
@@ -46,14 +39,14 @@ const extraMetadata = {
 // ** REQUIRED **
 const AUTH = process.env.NFTPORT_API_KEY; // Set this in the .env file to prevent exposing your API key when pushing to Github
 const LIMIT = 2; // Your API key rate limit
-const CHAIN = 'rinkeby'; // only rinkeby or polygon
+const CHAIN = "rinkeby"; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'CRYPTOPUNKS';
-const CONTRACT_SYMBOL = 'CP';
+const CONTRACT_NAME = "CRYPTOPUNKS";
+const CONTRACT_SYMBOL = "CP";
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
-const OWNER_ADDRESS = 'YOUR WALLET ADDRESS HERE';
-const TREASURY_ADDRESS = 'YOUR WALLET ADDRESS HERE';
+const OWNER_ADDRESS = "YOUR WALLET ADDRESS HERE";
+const TREASURY_ADDRESS = "YOUR WALLET ADDRESS HERE";
 const MAX_SUPPLY = 5000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
 const MINT_PRICE = 1; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
@@ -76,7 +69,8 @@ let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually inclu
 const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 const GENERIC_TITLE = CONTRACT_NAME; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
 const GENERIC_DESCRIPTION = "REPLACE THIS"; // Replace with what you want the generic descriptions to say.
-const GENERIC_IMAGE = "https://ipfs.io/ipfs/QmUf9tDbkqnfHkQaMdFWSGAeXwVXWA61pFED7ypx4hcsfh"; // Replace with your generic image that will display for all NFTs pre-reveal.
+const GENERIC_IMAGE =
+  "https://ipfs.io/ipfs/QmUf9tDbkqnfHkQaMdFWSGAeXwVXWA61pFED7ypx4hcsfh"; // Replace with your generic image that will display for all NFTs pre-reveal.
 
 // Automatically set contract address if deployed using the deployContract.js script
 try {
@@ -125,7 +119,7 @@ const text = {
 };
 
 const pixelFormat = {
-  ratio: 2 / 128,
+  ratio: 12 / 128,
 };
 
 const background = {
@@ -147,7 +141,7 @@ const preview = {
 };
 
 const preview_gif = {
-  numberOfImages: 5,
+  numberOfImages: 50,
   order: "ASC", // ASC, DESC, MIXED
   repeat: 0,
   quality: 100,
@@ -196,5 +190,5 @@ module.exports = {
   PUBLIC_MINT_START_DATE,
   BASE_URI,
   PREREVEAL_TOKEN_URI,
-  PRESALE_WHITELISTED_ADDRESSES
+  PRESALE_WHITELISTED_ADDRESSES,
 };

@@ -18,7 +18,7 @@ const p_presale_mint_whitelisted =
   "You're on the whitelist for the pre-sale! 🎉";
 const p_presale_mint_already_minted =
   "You've already claimed your whitelist mint. Thank you! 🎉";
-const p_public_mint = "No whitelist needed. Public minting is now open! 🎉";
+const p_public_mint = " Public minting is now open! 🎉";
 const button_presale_coming_soon = "Get on the Whitelist";
 const button_presale_mint_whitelisted = "Mint Your Special NFT";
 const button_presale_mint_not_whitelisted = "Get on the Whitelist";

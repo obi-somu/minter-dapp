@@ -44,7 +44,7 @@ const CHAIN = "rinkeby"; // only rinkeby or polygon
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
 const CONTRACT_NAME = "Mutant Hog Coven";
 const CONTRACT_SYMBOL = "MHC";
-const METADATA_UPDATABLE = false; // set to false if you don't want to allow metadata updates after minting
+const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = "0x28e11998A96Dcc6Aa0a52E4433557547494A0F71";
 const TREASURY_ADDRESS = "0x28e11998A96Dcc6Aa0a52E4433557547494A0F71";
 const MAX_SUPPLY = 100; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!

@@ -47,7 +47,7 @@ const CONTRACT_SYMBOL = "MHC";
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = "0x28e11998A96Dcc6Aa0a52E4433557547494A0F71";
 const TREASURY_ADDRESS = "0x28e11998A96Dcc6Aa0a52E4433557547494A0F71";
-const MAX_SUPPLY = 100; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
+const MAX_SUPPLY = 1000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
 const MINT_PRICE = 0.001; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
@@ -62,7 +62,6 @@ const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
 const PRESALE_WHITELISTED_ADDRESSES = [
   "0xfF69c1ee6FeE0F9f0Eedd24eA3fE547F50Cfd10d",
-  ,
 ]; // only update if you want to manually set the whitelisted addresses
 
 // ** OPTIONAL **

@@ -136,7 +136,7 @@ const addMetadata = (_dna, _edition) => {
     edition: _edition,
     ...extraMetadata,
     date: dateTime,
-    compiler: "Art Engine",
+    compiler: "Dark Soul Coven",
   };
   if (network == NETWORK.sol) {
     tempMetadata = {

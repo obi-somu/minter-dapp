@@ -63,6 +63,7 @@ const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the
 const PRESALE_WHITELISTED_ADDRESSES = [
   "0xa7CB1Cead0102afAbb28F924ACf592a50E06d6F7",
   "0xfac39739F4C45093dd55843a5f0f1FE78c0c5E2B",
+  "0x94f372ddEd59f550eE4d09b14E14da49b5559EA8",
 ]; // only update if you want to manually set the whitelisted addresses
 
 // ** OPTIONAL **

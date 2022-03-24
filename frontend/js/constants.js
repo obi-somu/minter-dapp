@@ -13,7 +13,7 @@ const h2_presale_mint = "Public Minting Countdown";
 const p_presale_coming_soon =
   "We are working hard to launch the NFT Collection. Stay tuned for updates!";
 const p_presale_mint_not_whitelisted =
-  "You are not whitelisted for the pre-sale.. 😢, \n Join the community and drop your ETH address. 👇";
+  "You are not whitelisted for the pre-sale.. 😢, \n Join the community and drop your ETH address. \n \t👇";
 const p_presale_mint_whitelisted =
   "You're on the whitelist for the pre-sale! 🎉";
 const p_presale_mint_already_minted =

@@ -4,7 +4,7 @@ const chain = "rinkeby"; // rinkeby or polygon
 const welcome_h1 = "Welcome to the Alien Mutant Coven !!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
 const welcome_p =
-  "This is a collection of 500  NFTs residing in the polygon chain.All members of this coven stands to receive 1000 AMC Token and other bonuses will be revealed by the community soon.The value of your card will determine the strength and the number of spells and charms , you receive during the coven events also it determines your rank within the coven.";
+  "This is a collection of 500  NFTs residing in the polygon chain.All members of this coven stands to receive 1000 AMC Token and other bonuses will be revealed by the community soon.The value of your card will determine the strength and the number of spells and charms , you receive during the coven events also it determines your rank within the coven.\n💡 ROADMAP : \n📌 Pre-sale Minting \n📌 Public Minting and NFT reveal \n📌 500000000 AMC Token Airdrop  \n📌 Token Listing on pancakeSwap \n📌 Many more";
 const h1_presale_coming_soon = "NFT Drop Coming Soon!!";
 const h1_presale_mint = "Pre-Sale Minting Open!!";
 const h1_public_mint = "Public Minting Open!!";
